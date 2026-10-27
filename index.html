@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Serendib Stones — Exceptional unheated Ceylon sapphires, rare Padparadschas, and artisanal gems from the ancient island of Sri Lanka (Ratna Dweepa)." />
+  <title>Serendib Stones — Ceylon Gem House · රත්නදීප</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Sinhala:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Gold Grain & Sparkle Canvas Overlay -->
+  <div class="grain"></div>
+  <canvas id="sparkle-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <span><span class="sinhala-accent">රත්නදීප</span> · The Island of Gems · 100% Ethically Mined in Sri Lanka</span>
+      <div class="top-announcement-right">
+        <span class="badge-pill">NGJA Licensed Exporter</span>
+        <div class="currency-selector" id="currency-toggle">
+          <button class="curr-btn active" data-curr="USD">USD ($)</button>
+          <button class="curr-btn" data-curr="LKR">LKR (Rs)</button>
+          <button class="curr-btn" data-curr="GBP">GBP (£)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Luxury Navigation Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a class="brand" href="#top" aria-label="Serendib Stones home">
+        <span class="brand-crest">
+          <svg viewBox="0 0 36 36" class="crest-svg" fill="none" stroke="currentColor">
+            <polygon points="18,2 34,12 34,28 18,34 2,28 2,12" stroke-width="1.5"/>
+            <polygon points="18,7 29,14 29,25 18,30 7,25 7,14" stroke-width="1" opacity="0.6"/>
+            <circle cx="18" cy="18" r="4" fill="currentColor"/>
+          </svg>
+        </span>
+        <div class="brand-text">
+          <span class="brand-title">SERENDIB</span>
+          <span class="brand-sub">STONES · CEYLON <em>est. Ratnapura</em></span>
+        </div>
+      </a>
+
+      <nav id="nav" class="nav-links">
+        <a href="#vault" class="nav-link">Gem Vault</a>
+        <a href="#provenance-map" class="nav-link">Provenance Map</a>
+        <a href="#heritage" class="nav-link">Artisanal Heritage</a>
+        <a href="#verify" class="nav-link">Certificate Check</a>
+        <a href="#bespoke" class="nav-link">Bespoke Concierge</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-cta" href="#enquire">
+          <span>Private Salon</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 11L11 1M11 1H3M11 1V9"/>
+          </svg>
+        </a>
+        <button class="menu-btn" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="drawer-brand">SERENDIB STONES</span>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#vault" class="drawer-link">The Gem Vault</a>
+      <a href="#provenance-map" class="drawer-link">Ratna Dweepa Map</a>
+      <a href="#heritage" class="drawer-link">Artisanal Heritage</a>
+      <a href="#verify" class="drawer-link">Verify Certificate</a>
+      <a href="#bespoke" class="drawer-link">Bespoke Commissioning</a>
+      <a href="#enquire" class="drawer-link">Private Enquiry</a>
+    </div>
+    <div class="drawer-footer">
+      <p class="sinhala-accent">රත්නපුර · ශ්‍රී ලංකා</p>
+      <p>Ratnapura &amp; Colombo World Trade Center</p>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- Cinematic Hero Section -->
+    <section class="hero">
+      <div class="hero-bg-layer">
+        <div class="hero-media-overlay"></div>
+      </div>
+      
+      <div class="hero-content">
+        <div class="hero-tagline-wrapper reveal">
+          <span class="sinhala-badge">රත්නදීප · The Island of Gems</span>
+          <span class="hero-coords">06°40′N 80°24′E · RATNAPURA, CEYLON</span>
+        </div>
+        
+        <h1 class="hero-title reveal">
+          Pure Ceylon Fire.<br>
+          <em>Unearthed by Hand.</em>
+        </h1>
+        
+        <p class="hero-subtitle reveal">
+          For over 2,500 years, the alluvial valleys of Sri Lanka have yielded the world’s most coveted unheated Royal Blue Sapphires, Padparadschas, and Star gems. Sourced directly from our family-held pits.
+        </p>
+        
+        <div class="hero-cta-group reveal">
+          <a href="#vault" class="btn btn-gold">
+            <span>Explore The Gem Vault</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M7 1v12M1 7l6 6 6-6"/>
+            </svg>
+          </a>
+          <a href="#provenance-map" class="btn btn-outline-light">
+            <span>Interactive Gem Map</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M2 2l10 10M12 2v10H2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Gem Ticker / Highlights Pill -->
+      <div class="hero-gem-strip">
+        <div class="gem-strip-item" data-gem="royal-sapphire" onclick="openGemModal('gem-1')">
+          <div class="gem-strip-thumb"><img src="assets/royal-blue-sapphire.jpg" alt="Ceylon Royal Blue Sapphire" /></div>
+          <div>
+            <span class="strip-label">ROYAL BLUE</span>
+            <span class="strip-sub">Elahera · 8.42 ct Unheated</span>
+          </div>
+        </div>
+        <div class="gem-strip-item" data-gem="padparadscha" onclick="openGemModal('gem-2')">
+          <div class="gem-strip-thumb"><img src="assets/padparadscha-sapphire.jpg" alt="Padparadscha Sapphire" /></div>
+          <div>
+            <span class="strip-label">PADPARADSCHA</span>
+            <span class="strip-sub">Rakwana · Lotus Sunset</span>
+          </div>
+        </div>
+        <div class="gem-strip-item" data-gem="star-sapphire" onclick="openGemModal('gem-3')">
+          <div class="gem-strip-thumb"><img src="assets/star-sapphire.jpg" alt="Ceylon Star Sapphire" /></div>
+          <div>
+            <span class="strip-label">STAR SAPPHIRE</span>
+            <span class="strip-sub">Okkampitiya · 6-Ray Star</span>
+          </div>
+        </div>
+        <div class="gem-strip-item" data-gem="cats-eye" onclick="openGemModal('gem-4')">
+          <div class="gem-strip-thumb"><img src="assets/cats-eye-chrysoberyl.jpg" alt="Chrysoberyl Cat's Eye" /></div>
+          <div>
+            <span class="strip-label">CAT’S EYE</span>
+            <span class="strip-sub">Ratnapura · Chatoyant Ray</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <span>DISCOVER CEYLON</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Heritage & Lore Introduction -->
+    <section class="story-section section-pad" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-left">
+            <span class="section-eyebrow">A 25-CENTURY LEGACY</span>
+            <h2 class="section-title">
+              The Legend of<br>
+              <em>Serendib’s Earth.</em>
+            </h2>
+            <div class="sinhala-ornament">
+              <span class="sinhala-large">මාණික්‍ය භූමිය</span>
+              <span class="ornament-line"></span>
+            </div>
+            <p class="lead-p">
+              When Marco Polo anchored off the palm-fringed shores of Ceylon in 1292, he recorded that the island possessed the most luminous sapphires, topazes, and rubies known to humanity.
+            </p>
+            <p>
+              From the 400-carat <em>Blue Belle of Asia</em> to the fabled <em>Star of India</em> and Queen Elizabeth II’s coronation brooch, Sri Lanka is the undisputed cradle of royal corundum. Unlike treated commercial stones, authentic Ceylon gems are celebrated for their natural clarity, unheated crystalline purity, and the velvety glow born of our highland rivers.
+            </p>
+            <div class="heritage-stats">
+              <div class="stat-box">
+                <span class="stat-num">90%</span>
+                <span class="stat-desc">Of Sri Lanka’s landmass holds gem-bearing alluvium</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">0%</span>
+                <span class="stat-desc">Mechanized strip mining — 100% artisanal pit heritage</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">2500+</span>
+                <span class="stat-desc">Years of documented royal lapidary history</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-right">
+            <div class="story-image-card">
+              <div class="story-image-wrap">
+                <img src="assets/ratnapura-mining.jpg" alt="Traditional gem washing in Ratnapura Sri Lanka" class="story-img" />
+              </div>
+              <div class="story-image-caption">
+                <div class="caption-tag">RATNAPURA · THE CITY OF GEMS</div>
+                <p>Artisanal miners swirling <em>Illama</em> gravel in conical bamboo baskets (<em>Vatti</em>) at dawn in the Kalu Ganga basin.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Gem Vault (Interactive Filter & Showcase) -->
+    <section class="vault-section section-pad" id="vault">
+      <div class="container">
+        <div class="vault-header">
+          <div>
+            <span class="section-eyebrow">CURATED COLLECTION</span>
+            <h2 class="section-title">The Serendib <em>Gem Vault.</em></h2>
+            <p class="section-intro">Each specimen is individually mined, evaluated in Ratnapura, and certified unheated by leading global gemological institutes.</p>
+          </div>
+          
+          <!-- Category Filters -->
+          <div class="vault-filters" id="vault-filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Specimens</button>
+            <button class="filter-tab" data-filter="sapphire">Blue Sapphires</button>
+            <button class="filter-tab" data-filter="padparadscha">Padparadscha</button>
+            <button class="filter-tab" data-filter="star">Star Corundum</button>
+            <button class="filter-tab" data-filter="rare">Rare Minerals</button>
+          </div>
+        </div>
+
+        <!-- Gem Cards Grid -->
+        <div class="gems-vault-grid" id="gems-grid">
+          
+          <!-- Gem 1: Royal Blue Sapphire -->
+          <article class="gem-card" data-category="sapphire" data-region="elahera" data-id="gem-1">
+            <div class="gem-card-media">
+              <img src="assets/royal-blue-sapphire.jpg" alt="The Elahera Monarch Royal Blue Sapphire" loading="lazy" />
+              <div class="gem-badge-top">
+                <span class="badge-unheated">Natural · Unheated</span>
+                <span class="badge-origin">Elahera, Sri Lanka</span>
+              </div>
+              <button class="btn-inspect-hover" onclick="openGemModal('gem-1')">
+                <span>360° Inspect &amp; Specs</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><circle cx="7" cy="7" r="6"/><path d="M7 4v6M4 7h6"/></svg>
+              </button>
+            </div>
+            <div class="gem-card-info">
+              <div class="gem-meta-row">
+                <span class="gem-type">Corundum · Royal Blue</span>
+                <span class="gem-cert-pill">GIA &amp; NGJA Certified</span>
+              </div>
+              <h3 class="gem-name">The Elahera Monarch</h3>
+              <p class="gem-desc">Exhibiting the prized vivid royal blue hue with supreme crystalline transparency and microscopic natural silk.</p>
+              <div class="gem-specs-grid">
+                <div><span class="spec-label">Weight</span><span class="spec-val">8.42 Carats</span></div>
+                <div><span class="spec-label">Cut</span><span class="spec-val">Precision Oval</span></div>
+                <div><span class="spec-label">Origin</span><span class="spec-val">Elahera Valley</span></div>
+                <div><span class="spec-label">Price</span><span class="spec-val price-val" data-base-usd="42000">$42,000 USD</span></div>
+              </div>
+              <div class="gem-card-actions">
+                <button class="btn-card-primary" onclick="openGemModal('gem-1')">View Lab Report</button>
+                <button class="btn-card-enquire" onclick="inquireGem('The Elahera Monarch (8.42 ct Royal Blue Sapphire)')">Acquire</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gem 2: Padparadscha Sapphire -->
+          <article class="gem-card featured-gem" data-category="padparadscha" data-region="ratnapura" data-id="gem-2">
+            <div class="gem-card-media">
+              <img src="assets/padparadscha-sapphire.jpg" alt="The Nilwala Lotus Padparadscha Sapphire" loading="lazy" />
+              <div class="gem-badge-top">
+                <span class="badge-unheated">Natural · Unheated</span>
+                <span class="badge-origin">Rakwana, Sri Lanka</span>
+              </div>
+              <button class="btn-inspect-hover" onclick="openGemModal('gem-2')">
+                <span>360° Inspect &amp; Specs</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><circle cx="7" cy="7" r="6"/><path d="M7 4v6M4 7h6"/></svg>
+              </button>
+            </div>
+            <div class="gem-card-info">
+              <div class="gem-meta-row">
+                <span class="gem-type">Padparadscha Sapphire</span>
+                <span class="gem-cert-pill">GRS Master Color</span>
+              </div>
+              <h3 class="gem-name">The Nilwala Lotus (පද්මරාග)</h3>
+              <p class="gem-desc">The rarest color in the corundum kingdom — an equal fusion of sunset orange and delicate lotus petal pink.</p>
+              <div class="gem-specs-grid">
+                <div><span class="spec-label">Weight</span><span class="spec-val">4.25 Carats</span></div>
+                <div><span class="spec-label">Cut</span><span class="spec-val">Antique Cushion</span></div>
+                <div><span class="spec-label">Origin</span><span class="spec-val">Rakwana Beds</span></div>
+                <div><span class="spec-label">Price</span><span class="spec-val price-val" data-base-usd="38500">$38,500 USD</span></div>
+              </div>
+              <div class="gem-card-actions">
+                <button class="btn-card-primary" onclick="openGemModal('gem-2')">View Lab Report</button>
+                <button class="btn-card-enquire" onclick="inquireGem('The Nilwala Lotus (4.25 ct Padparadscha Sapphire)')">Acquire</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gem 3: Star Sapphire -->
+          <article class="gem-card" data-category="star" data-region="okkampitiya" data-id="gem-3">
+            <div class="gem-card-media">
+              <img src="assets/star-sapphire.jpg" alt="The Star of Serendib Asterism Sapphire" loading="lazy" />
+              <div class="gem-badge-top">
+                <span class="badge-unheated">100% Natural Asterism</span>
+                <span class="badge-origin">Okkampitiya, Sri Lanka</span>
+              </div>
+              <button class="btn-inspect-hover" onclick="openGemModal('gem-3')">
+                <span>360° Inspect &amp; Specs</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><circle cx="7" cy="7" r="6"/><path d="M7 4v6M4 7h6"/></svg>
+              </button>
+            </div>
+            <div class="gem-card-info">
+              <div class="gem-meta-row">
+                <span class="gem-type">Star Sapphire Corundum</span>
+                <span class="gem-cert-pill">NGJA Master Specimen</span>
+              </div>
+              <h3 class="gem-name">The Star of Serendib</h3>
+              <p class="gem-desc">A deep midnight sapphire displaying a razor-sharp, floating 6-ray asterism star created by dense rutile needles.</p>
+              <div class="gem-specs-grid">
+                <div><span class="spec-label">Weight</span><span class="spec-val">14.60 Carats</span></div>
+                <div><span class="spec-label">Cut</span><span class="spec-val">High Dome Cabochon</span></div>
+                <div><span class="spec-label">Origin</span><span class="spec-val">Okkampitiya</span></div>
+                <div><span class="spec-label">Price</span><span class="spec-val price-val" data-base-usd="24500">$24,500 USD</span></div>
+              </div>
+              <div class="gem-card-actions">
+                <button class="btn-card-primary" onclick="openGemModal('gem-3')">View Lab Report</button>
+                <button class="btn-card-enquire" onclick="inquireGem('The Star of Serendib (14.60 ct Star Sapphire)')">Acquire</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gem 4: Chrysoberyl Cat's Eye -->
+          <article class="gem-card" data-category="rare" data-region="ratnapura" data-id="gem-4">
+            <div class="gem-card-media">
+              <img src="assets/cats-eye-chrysoberyl.jpg" alt="The Ratnapura Ray Chrysoberyl Cats Eye" loading="lazy" />
+              <div class="gem-badge-top">
+                <span class="badge-unheated">Cymophane Chatoyancy</span>
+                <span class="badge-origin">Ratnapura, Sri Lanka</span>
+              </div>
+              <button class="btn-inspect-hover" onclick="openGemModal('gem-4')">
+                <span>360° Inspect &amp; Specs</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><circle cx="7" cy="7" r="6"/><path d="M7 4v6M4 7h6"/></svg>
+              </button>
+            </div>
+            <div class="gem-card-info">
+              <div class="gem-meta-row">
+                <span class="gem-type">Chrysoberyl · Cat's Eye (වෛරෝඩි)</span>
+                <span class="gem-cert-pill">GIC Certified</span>
+              </div>
+              <h3 class="gem-name">The Ratnapura Ray</h3>
+              <p class="gem-desc">Exemplifying the legendary "milk and honey" effect with an electrifying, razor-straight chatoyant band across a translucent honey body.</p>
+              <div class="gem-specs-grid">
+                <div><span class="spec-label">Weight</span><span class="spec-val">6.42 Carats</span></div>
+                <div><span class="spec-label">Cut</span><span class="spec-val">Oval Cabochon</span></div>
+                <div><span class="spec-label">Origin</span><span class="spec-val">Ratnapura Deep Pit</span></div>
+                <div><span class="spec-label">Price</span><span class="spec-val price-val" data-base-usd="19800">$19,800 USD</span></div>
+              </div>
+              <div class="gem-card-actions">
+                <button class="btn-card-primary" onclick="openGemModal('gem-4')">View Lab Report</button>
+                <button class="btn-card-enquire" onclick="inquireGem('The Ratnapura Ray (6.42 ct Chrysoberyl Cat’s Eye)')">Acquire</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gem 5: Meetiyagoda Blue Moonstone -->
+          <article class="gem-card" data-category="rare" data-region="meetiyagoda" data-id="gem-5">
+            <div class="gem-card-media">
+              <img src="assets/blue-moonstone.jpg" alt="The Meetiyagoda Water Drop Moonstone" loading="lazy" />
+              <div class="gem-badge-top">
+                <span class="badge-unheated">100% Unheated Feldspar</span>
+                <span class="badge-origin">Meetiyagoda, Sri Lanka</span>
+              </div>
+              <button class="btn-inspect-hover" onclick="openGemModal('gem-5')">
+                <span>360° Inspect &amp; Specs</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><circle cx="7" cy="7" r="6"/><path d="M7 4v6M4 7h6"/></svg>
+              </button>
+            </div>
+            <div class="gem-card-info">
+              <div class="gem-meta-row">
+                <span class="gem-type">Orthoclase · Blue Moonstone (සඳකාන්ත)</span>
+                <span class="gem-cert-pill">NGJA Certified</span>
+              </div>
+              <h3 class="gem-name">The Meetiyagoda Tear</h3>
+              <p class="gem-desc">Mined exclusively from the kaolin pegmatites of Meetiyagoda — world famed for hypnotic electric blue adularescence sheen.</p>
+              <div class="gem-specs-grid">
+                <div><span class="spec-label">Weight</span><span class="spec-val">7.80 Carats</span></div>
+                <div><span class="spec-label">Cut</span><span class="spec-val">Smooth Oval Cabochon</span></div>
+                <div><span class="spec-label">Origin</span><span class="spec-val">Meetiyagoda</span></div>
+                <div><span class="spec-label">Price</span><span class="spec-val price-val" data-base-usd="6200">$6,200 USD</span></div>
+              </div>
+              <div class="gem-card-actions">
+                <button class="btn-card-primary" onclick="openGemModal('gem-5')">View Lab Report</button>
+                <button class="btn-card-enquire" onclick="inquireGem('The Meetiyagoda Tear (7.80 ct Blue Moonstone)')">Acquire</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gem 6: Bespoke Royal Ceylon Sapphire Ring -->
+          <article class="gem-card" data-category="sapphire" data-region="ratnapura" data-id="gem-6">
+            <div class="gem-card-media">
+              <img src="assets/bespoke-ring.jpg" alt="The Ceylon High Commission Royal Sapphire Ring" loading="lazy" />
+              <div class="gem-badge-top">
+                <span class="badge-unheated">Heirloom Setting</span>
+                <span class="badge-origin">18K Ceylon Gold</span>
+              </div>
+              <button class="btn-inspect-hover" onclick="openGemModal('gem-6')">
+                <span>360° Inspect &amp; Specs</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><circle cx="7" cy="7" r="6"/><path d="M7 4v6M4 7h6"/></svg>
+              </button>
+            </div>
+            <div class="gem-card-info">
+              <div class="gem-meta-row">
+                <span class="gem-type">High Jewelry Commission</span>
+                <span class="gem-cert-pill">GIA &amp; GRS Report</span>
+              </div>
+              <h3 class="gem-name">The Ceylon Crown Ring</h3>
+              <p class="gem-desc">A 6.10 ct unheated cornflower blue sapphire encircled by double brilliant-cut diamond halos in hand-carved 18K yellow gold.</p>
+              <div class="gem-specs-grid">
+                <div><span class="spec-label">Center Gem</span><span class="spec-val">6.10 ct Sapphire</span></div>
+                <div><span class="spec-label">Accents</span><span class="spec-val">1.45 ct VVS Diamonds</span></div>
+                <div><span class="spec-label">Metal</span><span class="spec-val">18K Handcrafted Gold</span></div>
+                <div><span class="spec-label">Price</span><span class="spec-val price-val" data-base-usd="34000">$34,000 USD</span></div>
+              </div>
+              <div class="gem-card-actions">
+                <button class="btn-card-primary" onclick="openGemModal('gem-6')">View Lab Report</button>
+                <button class="btn-card-enquire" onclick="inquireGem('The Ceylon Crown Ring (6.10 ct Sapphire in 18k Gold)')">Acquire</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Provenance Map of Sri Lanka ("Ratna Dweepa") -->
+    <section class="map-section section-pad" id="provenance-map">
+      <div class="container">
+        <div class="map-header">
+          <span class="section-eyebrow">GEOLOGICAL ORIGIN</span>
+          <h2 class="section-title">The Ratna Dweepa <em>Provenance Map.</em></h2>
+          <p class="section-intro">Explore the distinct geological corridors of Sri Lanka where alluvial deposits (<em>Illama</em>) have preserved gems for 500 million years.</p>
+        </div>
+
+        <div class="map-interactive-container">
+          <!-- Interactive Map Graphics (Custom stylized SVG of Sri Lanka) -->
+          <div class="map-svg-wrap">
+            <svg viewBox="0 0 500 700" class="sri-lanka-map-svg" id="sri-lanka-map">
+              <defs>
+                <radialGradient id="mapOceanGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#0a2a3f" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#05131d" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="islandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#142c33"/>
+                  <stop offset="50%" stop-color="#1b3a3a"/>
+                  <stop offset="100%" stop-color="#0f2228"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Island Contour of Sri Lanka -->
+              <path class="island-landmass" d="M 235,45 C 248,65 260,95 275,130 C 295,175 325,230 335,280 C 345,330 340,380 345,430 C 350,470 330,520 305,565 C 285,600 250,630 220,635 C 190,640 165,620 150,580 C 135,540 135,490 145,440 C 150,400 160,350 170,300 C 180,240 175,180 185,130 C 195,95 215,60 235,45 Z" />
+              
+              <!-- Mountain/Highland Core Area (Central Highlands) -->
+              <path class="highland-zone" d="M 210,340 Q 250,330 270,370 Q 285,420 260,470 Q 220,490 200,440 Z" />
+
+              <!-- Regional Connecting Trade Lines -->
+              <path class="gem-trade-path" d="M 220,460 L 260,320 L 295,440 L 195,540 L 235,485" />
+
+              <!-- Interactive Location Pins -->
+              <!-- 1. Ratnapura -->
+              <g class="map-pin active" data-region="ratnapura" transform="translate(220, 460)">
+                <circle class="pin-pulse" r="18"/>
+                <circle class="pin-ring" r="10"/>
+                <circle class="pin-core" r="5"/>
+                <text x="18" y="5" class="pin-label">RATNAPURA (රත්නපුර)</text>
+              </g>
+
+              <!-- 2. Elahera -->
+              <g class="map-pin" data-region="elahera" transform="translate(260, 320)">
+                <circle class="pin-pulse" r="18"/>
+                <circle class="pin-ring" r="10"/>
+                <circle class="pin-core" r="5"/>
+                <text x="18" y="5" class="pin-label">ELAHERA (ඇලහැර)</text>
+              </g>
+
+              <!-- 3. Meetiyagoda -->
+              <g class="map-pin" data-region="meetiyagoda" transform="translate(195, 540)">
+                <circle class="pin-pulse" r="18"/>
+                <circle class="pin-ring" r="10"/>
+                <circle class="pin-core" r="5"/>
+                <text x="-125" y="5" class="pin-label">MEETIYAGODA</text>
+              </g>
+
+              <!-- 4. Okkampitiya -->
+              <g class="map-pin" data-region="okkampitiya" transform="translate(295, 440)">
+                <circle class="pin-pulse" r="18"/>
+                <circle class="pin-ring" r="10"/>
+                <circle class="pin-core" r="5"/>
+                <text x="18" y="5" class="pin-label">OKKAMPITIYA</text>
+              </g>
+
+              <!-- 5. Pelmadulla -->
+              <g class="map-pin" data-region="pelmadulla" transform="translate(235, 485)">
+                <circle class="pin-pulse" r="18"/>
+                <circle class="pin-ring" r="10"/>
+                <circle class="pin-core" r="5"/>
+                <text x="18" y="5" class="pin-label">PELMADULLA</text>
+              </g>
+            </svg>
+
+            <div class="map-legend">
+              <div><span class="legend-dot gold"></span> Primary Corundum Beds</div>
+              <div><span class="legend-dot blue"></span> Moonstone Pegmatites</div>
+              <div><span class="legend-dot green"></span> Alluvial River Pits</div>
+            </div>
+          </div>
+
+          <!-- Region Detail Card (Dynamic updates on pin click) -->
+          <div class="region-detail-panel" id="region-detail-card">
+            <div class="region-detail-header">
+              <span class="region-code" id="region-code">REGION · 01</span>
+              <span class="region-elevation" id="region-elevation">Elevation: 130m · Tropical Highlands</span>
+            </div>
+            <h3 class="region-name" id="region-title">Ratnapura (City of Gems)</h3>
+            <p class="region-sinhala" id="region-sinhala">රත්නපුර · The Ancient Corundum Capital</p>
+            
+            <p class="region-body" id="region-desc">
+              Situated in the Sabaragamuwa province beneath the sacred peak of Sri Pada (Adam's Peak), Ratnapura is the historical heart of Ceylon gem mining. Its ancient riverbanks harbor layered alluvial gravel beds (*Illama*) rich in deep blue sapphires, rubies, and chrysoberyl cat’s eyes.
+            </p>
+
+            <div class="region-specs-table">
+              <div class="r-row">
+                <span class="r-lbl">Primary Mineral Wealth:</span>
+                <span class="r-val" id="region-gems">Royal Blue Sapphire, Padparadscha, Cat's Eye, Spinel</span>
+              </div>
+              <div class="r-row">
+                <span class="r-lbl">Mining Technique:</span>
+                <span class="r-val" id="region-method">Eco-friendly Gam Pathal (Artisanal Timber Pit)</span>
+              </div>
+              <div class="r-row">
+                <span class="r-lbl">Illama Depth:</span>
+                <span class="r-val" id="region-depth">10 to 50 Feet Underground</span>
+              </div>
+              <div class="r-row">
+                <span class="r-lbl">Historic Discoveries:</span>
+                <span class="r-val" id="region-finds">The Star of Adam (1,404 ct), Blue Giant of the Orient</span>
+              </div>
+            </div>
+
+            <div class="region-buttons">
+              <button class="btn btn-gold btn-sm" onclick="filterVaultByRegion('ratnapura')">View Gems From This Region</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Artisanal Heritage ("From Illama to Crown") -->
+    <section class="heritage-section section-pad" id="heritage">
+      <div class="container">
+        <div class="heritage-header text-center">
+          <span class="section-eyebrow">THE ETHICAL PATH</span>
+          <h2 class="section-title">From <em>Illama</em> to Heirloom.</h2>
+          <p class="section-intro center-intro">Sri Lanka is the global benchmark for ethical gem extraction. We preserve nature through generations of artisanal tradition with zero heavy machinery.</p>
+        </div>
+
+        <div class="process-steps-grid">
+          <!-- Step 1 -->
+          <div class="process-step-card">
+            <div class="step-num">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="1.5">
+                <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/>
+              </svg>
+            </div>
+            <h4 class="step-title">The Artisanal Pit (ගම් පතල)</h4>
+            <p class="step-desc">
+              Shafts are hand-excavated using rubber-tree timber scaffolding (*Kikiliya*) and fern linings that stabilize the soil without toxic chemicals or open-pit scars.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-card">
+            <div class="step-num">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3a9 9 0 0 1 9 9M3 12a9 9 0 0 1 9-9"/>
+              </svg>
+            </div>
+            <h4 class="step-title">The Basket Wash (ඉල්ලම් ගැරීම)</h4>
+            <p class="step-desc">
+              Gem-bearing gravel (*Illama*) is washed in conical bamboo wicker baskets (*Vatti*) inside natural rivers. The heavy corundum naturally settles at the vortex.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-card">
+            <div class="step-num">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="1.5">
+                <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/>
+              </svg>
+            </div>
+            <h4 class="step-title">Master Lapidary (කැපීම හා ඔපදැමීම)</h4>
+            <p class="step-desc">
+              Sri Lankan master cutters use traditional hand-guided wheels (*Hanapane*) to orient optical crystal axes, maximizing natural color saturation and brilliance over yield.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-card">
+            <div class="step-num">04</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <path d="M9 15l2 2 4-4"/>
+              </svg>
+            </div>
+            <h4 class="step-title">NGJA &amp; Global Certification</h4>
+            <p class="step-desc">
+              Every stone is sealed with government provenance clearance from the National Gem &amp; Jewellery Authority of Sri Lanka and independent GIA/GRS gemological dossiers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Certificate Verification System -->
+    <section class="verify-section section-pad" id="verify">
+      <div class="container">
+        <div class="verify-box">
+          <div class="verify-left">
+            <span class="section-eyebrow">AUTHENTICITY ENGINE</span>
+            <h2 class="section-title">Verify Gem <em>Passport.</em></h2>
+            <p>Every Serendib gemstone is backed by an unheated origin certificate from accredited international and national gem laboratories. Enter your report code below to view real-time parameters.</p>
+            
+            <div class="sample-chips">
+              <span>Try certified samples:</span>
+              <button class="chip-btn" onclick="lookupSampleCert('NGJA-8924')">NGJA-8924 (Royal Blue)</button>
+              <button class="chip-btn" onclick="lookupSampleCert('GRS-5521')">GRS-5521 (Padparadscha)</button>
+              <button class="chip-btn" onclick="lookupSampleCert('GIA-7410')">GIA-7410 (Star Sapphire)</button>
+            </div>
+
+            <form class="verify-form" id="cert-form" onsubmit="handleCertVerify(event)">
+              <div class="input-with-btn">
+                <input type="text" id="cert-input" placeholder="e.g. NGJA-8924, GRS-5521..." required />
+                <button type="submit" class="btn btn-gold">Verify Report</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="verify-right">
+            <!-- Digital Gem Passport Result Card -->
+            <div class="cert-passport-card" id="cert-result">
+              <div class="cert-header">
+                <div class="cert-logo-badge">
+                  <span class="cert-badge-inst" id="c-inst">NATIONAL GEM &amp; JEWELLERY AUTHORITY</span>
+                  <span class="cert-badge-sub">SRI LANKA · OFFICIAL ORIGIN REPORT</span>
+                </div>
+                <div class="cert-seal-emboss">
+                  <span>OFFICIAL<br>VERIFIED</span>
+                </div>
+              </div>
+
+              <div class="cert-body">
+                <div class="cert-row">
+                  <span class="c-key">Report Number</span>
+                  <span class="c-val highlight-gold" id="c-num">NGJA-8924</span>
+                </div>
+                <div class="cert-row">
+                  <span class="c-key">Identification</span>
+                  <span class="c-val" id="c-ident">Natural Corundum (Blue Sapphire)</span>
+                </div>
+                <div class="cert-row">
+                  <span class="c-key">Carat Weight</span>
+                  <span class="c-val" id="c-weight">8.42 ct</span>
+                </div>
+                <div class="cert-row">
+                  <span class="c-key">Geographic Origin</span>
+                  <span class="c-val" id="c-origin">Sri Lanka (Ceylon / Elahera)</span>
+                </div>
+                <div class="cert-row">
+                  <span class="c-key">Thermal Treatment</span>
+                  <span class="c-val status-green" id="c-treat">No Indications of Heating (Unheated)</span>
+                </div>
+                <div class="cert-row">
+                  <span class="c-key">Refractive Index</span>
+                  <span class="c-val" id="c-ri">1.762 – 1.770 (Birefringence 0.008)</span>
+                </div>
+                <div class="cert-row">
+                  <span class="c-key">Inclusions</span>
+                  <span class="c-val" id="c-inc">Fine intersecting rutile silk needles, liquid films</span>
+                </div>
+              </div>
+
+              <div class="cert-footer">
+                <span class="cert-qr-icon">■■ 100% UNTOUCHED SRI LANKAN GEM ■■</span>
+                <span class="cert-status-badge">AUTHENTICATED PASSPORT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bespoke Concierge & Custom Jewelry Builder -->
+    <section class="bespoke-section section-pad" id="bespoke">
+      <div class="container">
+        <div class="bespoke-wrapper">
+          <div class="bespoke-header text-center">
+            <span class="section-eyebrow">PRIVATE COMMISSIONS</span>
+            <h2 class="section-title">Craft Your <em>Ceylon Heirloom.</em></h2>
+            <p class="section-intro center-intro">Select your gemstone, preferred carat tier, and setting metal. Our master goldsmiths in Ratnapura will hand-forge your piece.</p>
+          </div>
+
+          <div class="configurator-grid">
+            <!-- Configurator Controls -->
+            <div class="config-controls">
+              <!-- Step 1: Gemstone Type -->
+              <div class="config-group">
+                <label class="config-label">1. Select Ceylon Center Gemstone</label>
+                <div class="option-pills" id="gem-type-options">
+                  <button class="pill-btn active" data-type="Royal Blue Sapphire" data-base="15000">Royal Blue Sapphire</button>
+                  <button class="pill-btn" data-type="Padparadscha Sapphire" data-base="22000">Padparadscha (Lotus)</button>
+                  <button class="pill-btn" data-type="Ceylon Star Sapphire" data-base="12000">Star Sapphire</button>
+                  <button class="pill-btn" data-type="Meetiyagoda Moonstone" data-base="3500">Blue Moonstone</button>
+                </div>
+              </div>
+
+              <!-- Step 2: Carat Weight Range -->
+              <div class="config-group">
+                <label class="config-label">2. Carat Weight</label>
+                <div class="carat-slider-wrap">
+                  <input type="range" id="carat-slider" min="2" max="12" step="0.5" value="4.5" />
+                  <div class="slider-val-display"><span id="carat-display">4.5</span> Carats</div>
+                </div>
+              </div>
+
+              <!-- Step 3: Setting Metal & Style -->
+              <div class="config-group">
+                <label class="config-label">3. Metal &amp; Mounting Style</label>
+                <div class="option-pills" id="metal-options">
+                  <button class="pill-btn active" data-metal="18K Ceylon Yellow Gold" data-metal-cost="2200">18K Ceylon Yellow Gold</button>
+                  <button class="pill-btn" data-metal="18K Rose Gold" data-metal-cost="2200">18K Rose Gold</button>
+                  <button class="pill-btn" data-metal="950 Platinum" data-metal-cost="3400">950 Platinum</button>
+                  <button class="pill-btn" data-metal="Solitaire Pendant (18k)" data-metal-cost="1800">Solitaire Pendant</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Configurator Live Preview Summary Card -->
+            <div class="config-summary-card">
+              <div class="summary-img-preview">
+                <img src="assets/bespoke-ring.jpg" alt="Bespoke Ceylon Sapphire Ring Preview" id="bespoke-preview-img" />
+                <div class="bespoke-watermark">BESPOKE WORKSHOP · CEYLON</div>
+              </div>
+
+              <div class="summary-details">
+                <h4 class="summary-title" id="sum-title">Royal Blue Sapphire Heirloom</h4>
+                <div class="summary-spec-list">
+                  <div class="s-row"><span>Center Gem:</span><b id="sum-gem">Royal Blue Sapphire</b></div>
+                  <div class="s-row"><span>Weight:</span><b id="sum-weight">4.50 Carats (Unheated)</b></div>
+                  <div class="s-row"><span>Setting:</span><b id="sum-metal">18K Ceylon Yellow Gold</b></div>
+                  <div class="s-row"><span>Provenance:</span><b>Ratnapura &amp; Elahera Mines</b></div>
+                </div>
+
+                <div class="summary-price-box">
+                  <span class="sum-price-label">Estimated Commission Investment:</span>
+                  <span class="sum-price-num" id="sum-price">$26,500 USD</span>
+                </div>
+
+                <button class="btn btn-gold btn-full" onclick="bookBespokeCommission()">
+                  <span>Request Private Commission</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><path d="M1 13L13 1M13 1H5M13 1V9"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Royal Provenance & Legacy Quotes -->
+    <section class="quote-section">
+      <div class="container">
+        <span class="section-eyebrow light">THE ROYAL PROVENANCE</span>
+        <blockquote class="quote-text">
+          “Ceylon is the precious jewel of the Eastern seas... whose mountains pour forth waters rich with sapphires of celestial blue and sunsets captured in stone.”
+        </blockquote>
+        <div class="quote-divider"></div>
+        <p class="quote-author">CHRONICLES OF SERENDIB · HISTORIC GEMOLOGICAL RECORDS</p>
+      </div>
+    </section>
+
+    <!-- Private Salon & Consultation Enquiry Form -->
+    <section class="enquire-section section-pad" id="enquire">
+      <div class="container">
+        <div class="enquire-grid">
+          <div class="enquire-info">
+            <span class="section-eyebrow">PRIVATE SALON</span>
+            <h2 class="section-title">Schedule a <em>Private Viewing.</em></h2>
+            <p>Whether you seek an unheated investment sapphire for your vault or wish to commission a one-of-a-kind royal piece, our family gemologists in Colombo and Ratnapura will curate a private viewing for you.</p>
+
+            <div class="contact-details">
+              <div class="c-item">
+                <span class="c-icon">📍</span>
+                <div>
+                  <b>Colombo Gem Exchange</b>
+                  <p>Level 28, West Tower, World Trade Center, Colombo 01, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="c-item">
+                <span class="c-icon">💎</span>
+                <div>
+                  <b>Ratnapura Vaults</b>
+                  <p>Main Street, Ratnapura (City of Gems), Sabaragamuwa Province</p>
+                </div>
+              </div>
+              <div class="c-item">
+                <span class="c-icon">✉️</span>
+                <div>
+                  <b>Direct Private Line</b>
+                  <p><a href="mailto:concierge@serendibstones.com">concierge@serendibstones.com</a> · +94 11 234 8900</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="enquire-form-card">
+            <form id="salon-form" onsubmit="handleEnquirySubmit(event)">
+              <h3 class="form-title">Private Acquisition Request</h3>
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="form-name" placeholder="Lady / Lord / Dr. / Mr. / Ms." required />
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" id="form-email" placeholder="client@domain.com" required />
+                </div>
+                <div class="form-group">
+                  <label>Telephone / WhatsApp</label>
+                  <input type="tel" id="form-phone" placeholder="+1 / +44 / +94..." required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Gemstone of Interest</label>
+                <select id="form-gem-interest">
+                  <option value="Royal Blue Sapphire">Royal Blue Ceylon Sapphire (Unheated)</option>
+                  <option value="Padparadscha">Padparadscha "Lotus" Sapphire</option>
+                  <option value="Star Sapphire">Ceylon Star Sapphire (Asterism)</option>
+                  <option value="Chrysoberyl Cat's Eye">Chrysoberyl Cat's Eye</option>
+                  <option value="Blue Moonstone">Meetiyagoda Blue Moonstone</option>
+                  <option value="Bespoke High Jewelry Commission">Bespoke High Jewelry Commission</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Investment Range (USD)</label>
+                <select id="form-budget">
+                  <option value="$10,000 - $25,000">$10,000 – $25,000 USD</option>
+                  <option value="$25,000 - $50,000">$25,000 – $50,000 USD</option>
+                  <option value="$50,000 - $100,000+">$50,000 – $100,000+ USD</option>
+                  <option value="Museum / Collector Tier">Collector / Museum Tier Specimen</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Specific Requests / Inclusions / Setting Notes</label>
+                <textarea id="form-message" rows="3" placeholder="Tell us about your preferences, carat target, or delivery destination..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-full">
+                <span>Dispatch Private Enquiry</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><path d="M1 13L13 1M13 1H5M13 1V9"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive 360° Gem Inspector Modal -->
+  <div class="gem-modal" id="gem-modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeGemModal()"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeGemModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-content-grid">
+        <!-- Interactive Gem Visual Showcase & Refraction Simulator -->
+        <div class="modal-gem-view">
+          <div class="modal-img-container" id="modal-img-wrap">
+            <img src="assets/royal-blue-sapphire.jpg" alt="Gemstone inspection view" id="modal-gem-image" />
+            <div class="facet-shimmer-layer" id="facet-shimmer"></div>
+          </div>
+          <div class="modal-view-controls">
+            <button class="view-btn active" id="btn-view-macro" onclick="setModalViewMode('macro')">Macro Facets</button>
+            <button class="view-btn" id="btn-view-silk" onclick="setModalViewMode('silk')">Rutile Silk View</button>
+            <button class="view-btn" id="btn-view-refract" onclick="setModalViewMode('refract')">Light Refractor</button>
+          </div>
+          <p class="modal-view-hint">Drag cursor over stone to simulate Ceylon sunlight refraction</p>
+        </div>
+
+        <!-- Gem Details & Laboratory Report -->
+        <div class="modal-gem-details">
+          <div class="modal-badge-group">
+            <span class="badge-unheated" id="modal-badge-heat">Natural Unheated</span>
+            <span class="badge-origin" id="modal-badge-origin">Sri Lanka</span>
+          </div>
+          
+          <h3 class="modal-gem-title" id="modal-title">The Elahera Monarch</h3>
+          <p class="modal-sinhala" id="modal-sinhala">රාජකීය නිල් මැණික · Royal Ceylon Sapphire</p>
+
+          <p class="modal-description" id="modal-desc">
+            A collector-grade unheated Ceylon sapphire exhibiting deep royal blue fire with silky transparency, unenhanced by thermal treatment.
+          </p>
+
+          <div class="modal-specs-table">
+            <div class="m-row"><span>Weight:</span><b id="modal-weight">8.42 Carats</b></div>
+            <div class="m-row"><span>Dimensions:</span><b id="modal-dims">13.2 x 10.8 x 7.4 mm</b></div>
+            <div class="m-row"><span>Color Grade:</span><b id="modal-color">Vivid Royal Blue</b></div>
+            <div class="m-row"><span>Clarity:</span><b id="modal-clarity">Eye Clean (Natural Silk Inclusions)</b></div>
+            <div class="m-row"><span>Cut:</span><b id="modal-cut">Precision Oval Brilliant</b></div>
+            <div class="m-row"><span>Origin:</span><b id="modal-origin">Elahera Valley, Sri Lanka</b></div>
+            <div class="m-row"><span>Certificates:</span><b id="modal-certs">GIA #2284920 &amp; NGJA #8924</b></div>
+          </div>
+
+          <div class="modal-price-box">
+            <span class="modal-price-label">Acquisition Price:</span>
+            <span class="modal-price-num price-val" id="modal-price" data-base-usd="42000">$42,000 USD</span>
+          </div>
+
+          <div class="modal-action-buttons">
+            <button class="btn btn-gold" id="modal-inquire-btn" onclick="inquireFromModal()">
+              <span>Reserve &amp; Inquire</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor"><path d="M1 13L13 1M13 1H5M13 1V9"/></svg>
+            </button>
+            <button class="btn btn-outline-dark" onclick="downloadSpecSheet()">Download Dossier (PDF)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div class="toast-notification" id="toast">
+    <div class="toast-icon">✓</div>
+    <div class="toast-msg" id="toast-msg">Notification message</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="#top">
+            <span class="brand-crest">
+              <svg viewBox="0 0 36 36" class="crest-svg" fill="none" stroke="currentColor">
+                <polygon points="18,2 34,12 34,28 18,34 2,28 2,12" stroke-width="1.5"/>
+                <circle cx="18" cy="18" r="4" fill="currentColor"/>
+              </svg>
+            </span>
+            <div class="brand-text">
+              <span class="brand-title">SERENDIB</span>
+              <span class="brand-sub">STONES · CEYLON</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Curators of unheated Ceylon sapphires, Padparadschas, and rare minerals. Mined ethically in Ratnapura and Elahera, Sri Lanka.
+          </p>
+          <div class="sinhala-footer-seal">රත්නදීප · සෙරන්ඩිබ් ස්ටෝන්ස්</div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>The Collection</h4>
+          <a href="#vault" onclick="filterVault('sapphire')">Royal Blue Sapphires</a>
+          <a href="#vault" onclick="filterVault('padparadscha')">Padparadscha Sapphires</a>
+          <a href="#vault" onclick="filterVault('star')">Star Sapphires &amp; Rubies</a>
+          <a href="#vault" onclick="filterVault('rare')">Chrysoberyl &amp; Moonstone</a>
+          <a href="#bespoke">Bespoke Commissions</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Provenance &amp; Ethics</h4>
+          <a href="#provenance-map">Sri Lanka Mining Corridors</a>
+          <a href="#heritage">Gam Pathal Artisanal Pits</a>
+          <a href="#verify">NGJA Certificate Verification</a>
+          <a href="#verify">GIA &amp; GRS Standards</a>
+          <a href="#story">The 2,500 Year History</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Global Salons</h4>
+          <p class="footer-addr"><strong>Colombo:</strong> World Trade Center, Colombo 01</p>
+          <p class="footer-addr"><strong>Ratnapura:</strong> Gem Vaults, Main St, Ratnapura</p>
+          <p class="footer-addr"><strong>Geneva / London:</strong> By Private Appointment</p>
+          <p class="footer-addr"><strong>Email:</strong> concierge@serendibstones.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Serendib Stones Ltd. Registered under the National Gem &amp; Jewellery Authority of Sri Lanka (NGJA).</p>
+        <div class="footer-legal-links">
+          <a href="#">Ethical Sourcing Pledge</a>
+          <a href="#">Certificate Authenticity</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
